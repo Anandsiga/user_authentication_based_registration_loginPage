@@ -39,6 +39,7 @@
   <script src="Assets/js/popper.min.js"></script>
   <script src="Assets/js/smooth-scrollbar.min.js"></script>
   <script src="Assets/js/perfect-scrollbar.min.js"></script>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
 
   

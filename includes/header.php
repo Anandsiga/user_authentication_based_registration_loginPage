@@ -6,7 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="Assets/css/external.css">
     <link rel="stylesheet" href="Assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="Assetes">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/common.css">
+    <link rel="stylesheet" href="Assets/css/dashboard.css">
+    <link rel="stylesheet" href="Assets/css/home.css">
+    <link rel="stylesheet" href="Assets/css/property-detail.css">
+    <link rel="stylesheet" href="Assets/css/property_list.css">
+
+
+
+
+
   <style>
        @media (min-width: 992px) {
     .navbar-toggler {

@@ -1,8 +1,14 @@
-<?php include('includes/header.php');
- ?>
-    
-
-
+<?php  
+include('includes/header.php'); 
+if(isset($_SESSION['auth_user'])){
+    $_SESSION['message']="you are already logged in";
+    header('Location: home.php');
+}
+elseif(isset($_SESSION['auth_admin'])){
+    $_SESSION['message'] = "You are allready logged in to admin";
+    header('Location: admin/home.php');
+}
+?>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -32,6 +38,11 @@
                         <label for="cpassword">Re-Password</label>
                         <input type="text" placeholder="Rewrite the password" name="cpassword">
                     </div>
+
+                    <select name="role" id="">
+                        <option value="1">Admin</option>
+                        <option value="0">User</option>
+                    </select>
 
                     <button type="submit" name="register_btn">submit</button>
                 </form>

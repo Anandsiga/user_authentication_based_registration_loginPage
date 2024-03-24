@@ -6,31 +6,25 @@ session_start();
     <div class="nav-items">
      
       <?php 
-        if(isset($_SESSION['auth'])) {
+        if(isset($_SESSION['auth_admin'])) {
       ?>    
             <a href="home.php">Home</a>
-            <a href="logout.php">Logout</a>
+            <a href="Aboutus.php">Aboutus</a>
+            <a href="../logout.php">Logout</a>
             <a href="#services">Services</a>
-            <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">dropdown</a>
-            <ul class="dropdown-menu" arial-labellebdy="navbarDropdownMenuLink">
-              <li><a href="logout.php" class="dropdown-item">Logout</a></li>
-              <li><a href="home.php" class="dropdown-item">Home</a></li>
-              <li><a href="" class="dropdown-item">Service</a></li>
-              <li><a href="" class="dropdown-item">Contact</a></li>
-            </ul>
-            </li>
-            <a href="logout.php">Logout <?= $_SESSION['auth_user']['name'] ?></a>
+            <a href="../logout.php">Logout <?= $_SESSION['auth_admin_data']['name'] ?></a>
       <?php
         } else {
       ?>
-            <a href="register.php">Register</a>
-            <a href="login.php">Login</a>
+            <a href="../register.php">Register</a>
+            <a href="../login.php">Login</a>
       <?php
         }
       ?>
       
     </div>
 </nav>
+        <?php include('sidebar.php'); ?>
+      </main>
+        <?php include('footer.php'); ?>
